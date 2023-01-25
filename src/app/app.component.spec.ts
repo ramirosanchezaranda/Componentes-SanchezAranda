@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Componentes-SanchezAranda'`, () => {
+  it(`should have as title 'componentes-ballon-fox'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Componentes-SanchezAranda');
+    expect(app.title).toEqual('componentes-ballon-fox');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Componentes-SanchezAranda app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('componentes-ballon-fox app is running!');
   });
 });
